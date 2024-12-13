@@ -9,8 +9,8 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 72),
-          behavior:"smooth",
-        }, 0, "easeInOutExpo");
+     
+        }, 100, "easeInOutExpo");
         return false;
       }
     }
