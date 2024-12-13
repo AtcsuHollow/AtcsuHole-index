@@ -8,8 +8,9 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 72)
-        }, 1000, "easeInOutExpo");
+          scrollTop: (target.offset().top - 72),
+          behavior:"smooth",
+        }, 0, "easeInOutExpo");
         return false;
       }
     }
@@ -22,10 +23,16 @@
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
+  document.body.setAttribute("data-bs-spy", "scroll");
+  document.body.setAttribute("data-bs-target", "#mainNav");
+  document.body.setAttribute("data-bs-offset", "75");
+
+  // 手动初始化 ScrollSpy（Bootstrap 5 的要求）
+  const scrollSpy = new bootstrap.ScrollSpy(document.body, {
     target: '#mainNav',
-    offset: 75
+    offset: 75,
   });
+
 
   // Collapse Navbar
   var navbarCollapse = function() {

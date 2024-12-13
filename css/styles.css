@@ -10879,10 +10879,10 @@ hr.divider-light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #ff2121;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #ff2121 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10908,15 +10908,14 @@ hr.divider-light {
     padding-right: 0;
   }
   #mainNav.navbar-scrolled {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 1);
-    background-color: rgba(0, 0, 0, 0.8) in !important;
+    background-color: white  !important;
   }
   #mainNav.navbar-scrolled .navbar-brand {
     color: #212529;
   }
 
 #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #743481;
+    color: #ff2121;
   }
 
 #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
@@ -10924,7 +10923,7 @@ hr.divider-light {
   }
 
 #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #743481;
+    color: #ff2121;
   }
 }
 
@@ -11110,6 +11109,7 @@ header.masthead h1, header.masthead .h1 {
   background-color: none; /* 悬浮时背景色 */
   color: snow !important; /* 悬浮时字体颜色 */
   border-color:none; /* 悬浮时边框颜色 */
+  text-decoration: none;
 }
 
 .js-scroll-trigger {
